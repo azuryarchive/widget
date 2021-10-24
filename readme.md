@@ -25,7 +25,8 @@ import widget from '@azury/widget'
 widget({
   theme: 'dark',
   placement: 'bottom right',
-  uploadLimit: 50
+  uploadLimit: 20,
+  zIndex: 9999
 })
 ```
 
