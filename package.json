@@ -1,0 +1,29 @@
+{
+  "name": "@azury/widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "jsdelivr": "src/browser.js",
+  "scripts": {
+    "build:browser": "node _build/browser.js",
+    "build:node": "node _build/node.js"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://ko-fi.com/azury"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azurystudios/widget.git"
+  },
+  "author": "Azury <hello@azury.dev> (https://azury.dev)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/azurystudios/widget/issues"
+  },
+  "homepage": "https://github.com/azurystudios/widget#readme",
+  "devDependencies": {
+    "terser": "^5.9.0"
+  },
+  "type": "module"
+}
