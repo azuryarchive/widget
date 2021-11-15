@@ -1,6 +1,6 @@
-## Widget
+# Azury's Widget
 
-### Setup
+## Setup
 
 #### NPM
 
@@ -17,6 +17,9 @@ import widget from '@azury/widget'
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@azury/widget@1"></script>
+<script type="module">
+  import widget from 'https://cdn.jsdelivr.net/npm/@azury/widget@1'
+</script>
 ```
 
 ### Usage
