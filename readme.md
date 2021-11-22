@@ -22,7 +22,7 @@ import widget from '@azury/widget'
 </script>
 ```
 
-### Usage
+## Usage
 
 ```js
 widget({
