@@ -12,7 +12,7 @@ yarn add @azury/widget
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@azury/widget@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@azury/widget@1"></script>
 ```
 
 ### Setup
