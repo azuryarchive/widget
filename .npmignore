@@ -1,2 +1,5 @@
 src
-build.js
+dev
+minify.mjs
+tsconfig.json
+.gitignore
