@@ -1,25 +1,35 @@
-## Azury's Widget
+# Azury's Widget
 
-### Installation
+## Installation
 
-#### NPM
+### NPM
+
+Install the widget using your favorite package manager.
 
 ```sh-session
 npm i @azury/widget
 yarn add @azury/widget
 ```
 
-#### CDN
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@azury/widget@1"></script>
-```
-
-### Setup
-
 ```js
 import widget from '@azury/widget'
+```
 
+### CDN
+
+```html
+<script type="module" src="https://cdn.jsdelivr.net/npm/@azury/widget@1"></script>
+```
+
+```html
+<script type="module">
+  import widget from "https://cdn.jsdelivr.net/npm/@azury/widget@1"
+</script>
+```
+
+## Setup
+
+```js
 widget({
   theme: 'dark',
   placement: 'bottom right',
@@ -28,6 +38,6 @@ widget({
 })
 ```
 
-### Usage
+## Usage
 
 Check out the [examples](https://github.com/azurystudios/widget/tree/main/examples) to get an idea of how to use our widget.
