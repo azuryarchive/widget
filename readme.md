@@ -4,12 +4,14 @@
 
 ### NPM
 
-Install the widget using your favorite package manager.
+Install our widget using your favorite package manager.
 
 ```sh-session
 npm i @azury/widget
 yarn add @azury/widget
 ```
+
+Import the package.
 
 ```js
 import widget from '@azury/widget'
@@ -17,13 +19,17 @@ import widget from '@azury/widget'
 
 ### CDN
 
+Install our widget using [jsDelivr](https://www.jsdelivr.com/).
+
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/@azury/widget@1"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@azury/widget"></script>
 ```
+
+Import the package.
 
 ```html
 <script type="module">
-  import widget from "https://cdn.jsdelivr.net/npm/@azury/widget@1"
+  import widget from "https://cdn.jsdelivr.net/npm/@azury/widget"
 </script>
 ```
 
