@@ -1,8 +1,8 @@
-# Azury's Widget
+## Azury's Widget
 
-## Installation
+### Installation
 
-### NPM
+#### NPM
 
 Install our widget using your favorite package manager.
 
@@ -17,7 +17,7 @@ Import the package.
 import widget from '@azury/widget'
 ```
 
-### CDN
+#### CDN
 
 Install our widget using [jsDelivr](https://www.jsdelivr.com/).
 
@@ -33,7 +33,7 @@ Import the package.
 </script>
 ```
 
-## Setup
+### Setup
 
 ```js
 widget({
@@ -44,6 +44,6 @@ widget({
 })
 ```
 
-## Usage
+### Usage
 
 Check out the [examples](https://github.com/azurystudios/widget/tree/main/examples) to get an idea of how to use our widget.
