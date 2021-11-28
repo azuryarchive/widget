@@ -1,0 +1,7 @@
+.azury_theme_dark {
+  --surface: #0b0c0f;
+  --surfaceSecondary: #0f1115;
+  --surfaceTertiary: #14151a;
+  --surfaceQuartiary: #181a20;
+  --shadowAll: 0 8px 15px rgba(0, 0, 0, .2);
+}
