@@ -2,14 +2,15 @@
   "name": "@azury/widget",
   "version": "1.0.0",
   "description": "Azury's Minimalistic Widget",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "tsc -w",
-    "minify": "node minify.mjs",
-    "publish:patch": "npm run minify && npm version patch && npm publish",
-    "publish:minor": "npm run minify && npm version minor && npm publish",
-    "publish:major": "npm run minify && npm version major && npm publish"
+    "build": "esbuild src/index.ts --bundle --minify --outfile=build/index.js",
+    "watch": "esbuild src/index.ts --bundle --minify --format=esm --watch --outfile=build/index.js",
+    "types": "tsc",
+    "publish:patch": "npm run build && npm version patch && npm publish",
+    "publish:minor": "npm run build && npm version minor && npm publish",
+    "publish:major": "npm run build && npm version major && npm publish"
   },
   "funding": {
     "type": "individual",
@@ -33,8 +34,8 @@
   },
   "homepage": "https://github.com/azurystudios/widget#readme",
   "devDependencies": {
-    "glob": "^7.2.0",
-    "terser": "^5.10.0",
+    "esbuild": "^0.14.0",
     "typescript": "^4.5.2"
-  }
+  },
+  "type": "module"
 }
