@@ -1,3 +1,20 @@
-.azury_theme_dark {
-  
+.azury_theme_light {
+  --font: 'Poppins', sans-serif;
+  --heading: #060607;
+  --text: rgba(0, 0, 0, .8);
+  --textDark: rgba(0, 0, 0, .6);
+  --surface: #D4D7DD;
+  --surfaceSecondary: #f2f3f5;
+  --surfaceTertiary: #E8EAED;
+  --surfaceQuartiary: #E3E5E8;
+  --gray: #2b2f3b;
+  --graySecondary: #414758;
+  --grayTertiary: #23262f;
+  --shadowAll: 0 8px 15px rgba(0, 0, 0, .2);
+  --shadowBottom: 0px 4px 4px rgba(0, 0, 0, .16);
+  --blurple: #5865f3;
+  --textBlurple: #4956e4;
+  --blurpleTertiary: #4956e4;
+  --textRed: #ed4043;
+  --green: #43b683;
 }
