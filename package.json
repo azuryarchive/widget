@@ -8,9 +8,9 @@
     "build": "esbuild src/index.ts --bundle --minify --outfile=build/index.js",
     "watch": "esbuild src/index.ts --bundle --minify --format=esm --watch --outfile=build/index.js",
     "types": "tsc",
-    "publish:patch": "npm run build && npm version patch && npm publish",
-    "publish:minor": "npm run build && npm version minor && npm publish",
-    "publish:major": "npm run build && npm version major && npm publish"
+    "publish:patch": "npm run build && npm version patch && npm publish --access public",
+    "publish:minor": "npm run build && npm version minor && npm publish --access public",
+    "publish:major": "npm run build && npm version major && npm publish --access public"
   },
   "funding": {
     "type": "individual",
