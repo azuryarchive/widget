@@ -1,12 +1,13 @@
 {
   "name": "@azury/widget",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Azury's Minimalistic Widget",
-  "main": "build/index.js",
+  "main": "dist/index.js",
+  "browser": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --minify --outfile=build/index.js",
-    "watch": "esbuild src/index.ts --bundle --minify --format=esm --watch --outfile=build/index.js",
+    "build": "esbuild src/index.ts --bundle --minify --outfile=dist/index.js",
+    "watch": "esbuild src/index.ts --bundle --minify --format=esm --watch --outfile=dist/index.js",
     "types": "tsc",
     "publish:patch": "npm run build && npm version patch && npm publish --access public",
     "publish:minor": "npm run build && npm version minor && npm publish --access public",
