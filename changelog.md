@@ -8,7 +8,7 @@ Available Releases:
 
 ## v1.0.3
 
-- fixed esm module
+- fixed ES module
 
 ## v1.0.2
 
@@ -16,4 +16,4 @@ Available Releases:
 
 ## v1.0.0
 
-- Premiere
+- **PREMIERE**
