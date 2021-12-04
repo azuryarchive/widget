@@ -10,7 +10,6 @@ export default (config?: any) => {
   if (config.placement.split(' ')[1] === 'left') popup.style.left = '40px'
   popup.style.zIndex = `${config.zIndex - 1}`
 
-  // add content
   popup.innerHTML = `
     <div class="azury_popup_content_wrapper">
       <div class="azury_popup_content">
