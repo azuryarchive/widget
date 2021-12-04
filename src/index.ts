@@ -28,7 +28,7 @@ export default (config?: Configuration) => {
   // append stylesheet
   const sheet = document.createElement('link')
   sheet.rel = 'stylesheet'
-  if (window.location.hostname === '127.0.0.1') sheet.href = '../dist/index.css'
+  if (window.location.href === 'http://127.0.0.1:5500/test/azury-widget.html') sheet.href = '../dist/index.css'
   else `https://cdn.jsdelivr.net/npm/@azury/widget@${version}/dist/index.css`
   document.head.appendChild(sheet)
 
