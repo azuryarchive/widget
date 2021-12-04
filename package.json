@@ -6,7 +6,7 @@
   "browser": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --minify --outfile=dist/index.js",
+    "build": "esbuild src/index.ts --bundle --minify --format=esm --outfile=dist/index.js",
     "watch": "esbuild src/index.ts --bundle --minify --format=esm --watch --outfile=dist/index.js",
     "types": "tsc",
     "publish:patch": "npm run build && npm version patch && npm publish --access public",
