@@ -22,14 +22,14 @@ import widget from '@azury/widget'
 Install our widget using [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/@azury/widget@1/dist/index.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@azury/widget@1"></script>
 ```
 
 Import the package.
 
 ```html
 <script type="module">
-  import widget from "https://cdn.jsdelivr.net/npm/@azury/widget@1/dist/index.js"
+  import widget from "https://cdn.jsdelivr.net/npm/@azury/widget@1"
 </script>
 ```
 
