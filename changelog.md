@@ -2,11 +2,17 @@
 
 Available Releases:
 
+- [v1.1.0](#110)
 - [v1.0.6](#v106)
 - [v1.0.4](#v104)
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.1.0
+
+- added custom themes
+- built-in styles
 
 ## v1.0.6
 
