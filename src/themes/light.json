@@ -1,0 +1,25 @@
+{
+  "font": "Poppins",
+  
+  "heading": "#060607",
+  "text": "rgba(0, 0, 0, .8)",
+  "textDark": "rgba(0, 0, 0, .6)",
+  "textLink": "#4956e4",
+  
+  "surface": "#d4d7dd",
+  "surfaceSecondary": "#f2f3f5",
+  "surfaceTertiary": "#e8eaed",
+  "surfaceQuartiary": "#e3e5e8",
+
+  "gray": "#2b2f3b",
+  "graySecondary": "#414758",
+  "grayTertiary": "#23262f",
+
+  "shadowAll": "0 8px 15px rgba(0, 0, 0, .2)",
+  "shadowBottom": "0px 4px 4px rgba(0, 0, 0, .16)",
+
+  "blurple": "#5865f3",
+  "blurpleSecondary": "#4956e4",
+  "green": "#43b683",
+  "red": "#ed4043"
+}
