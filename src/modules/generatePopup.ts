@@ -1,9 +1,9 @@
-export default (config?: any) => {
-  // create element
-  const popup = document.createElement('div')
-  popup.className = 'azury_popup'
+import styles from '../styles.module.css'
 
-  // custom styles
+export default (config?: any) => {
+  const popup = document.createElement('div')
+  popup.className = styles.popup
+
   if (config.placement.split(' ')[0] === 'bottom') popup.style.bottom = '40px'
   if (config.placement.split(' ')[0] === 'top') popup.style.top = '40px'
   if (config.placement.split(' ')[1] === 'right') popup.style.right = '40px'
@@ -11,10 +11,10 @@ export default (config?: any) => {
   popup.style.zIndex = `${config.zIndex - 1}`
 
   popup.innerHTML = `
-    <div class="azury_popup_content_wrapper">
-      <div class="azury_popup_content">
+    <div class=${styles.popupContentWrapper}>
+      <div class=${styles.popupContent}>
         <h1>Upload File</h1>
-        <i class="material-icons-outlined azury_upload">file_upload</i>
+        <i class="${styles.uploadIcon + ' material-icons-outlined'}">file_upload</i>
         <span>Max. ${config.uploadLimit} MB</span>
       </div>
     </div>

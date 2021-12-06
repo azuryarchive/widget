@@ -1,10 +1,12 @@
-export default (message: string) => {
-  const popup: any = document.querySelector('.azury_popup')
+import styles from '../styles.module.css'
 
-  popup.innerHTML = `
-    <div class="azury_popup_content_wrapper">
-      <div class="azury_popup_content azury_error">
-        <i class="material-icons-round">error_outline</i>
+export default (message: string) => {
+  const popup = document.querySelector(`.${styles.popup}`)
+
+  if (popup) popup.innerHTML = `
+    <div class=${styles.popupContentWrapper}>
+      <div class="${styles.popupContent + ` ${styles.error}`}">
+        <i class='material-icons-round'>error_outline</i>
         <p>${message.toUpperCase()}</p>
         <small>Please reopen the popup!</small>
       </div>
