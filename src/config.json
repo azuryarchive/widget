@@ -1,3 +1,5 @@
 {
-  "globalUploadLimit": 50
+  "uploadLimit": 50,
+  "api": "https://azury.dev/api",
+  "version": "v1.1.0"
 }
