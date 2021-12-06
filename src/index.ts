@@ -1,97 +1,73 @@
-// config
-import { version } from '../package.json'
-
-// modules
+import { version } from './config.json'
 import togglePopup from './modules/togglePopup'
 import generatePopup from './modules/generatePopup'
-
-// styles
-import './styles/dark.css'
-import './styles/light.css'
-import './styles/base.css'
-
-interface Configuration {
-  theme?: String,
-  placement?: String,
-  uploadLimit?: Number,
-  zIndex?: Number
-}
+import dark from './themes/dark.json'
+import light from './themes/light.json'
+import styles from './styles.module.css'
 
 /**
- * **Generate the Widget**
+ * ### Generate Azury's Widget
  * 
- * Generate the Widget
+ * A function that generates Azury's widget and appends it to the DOM.
  */
 export default (config?: Configuration) => {
   if (!config) config = {}
 
-  // append stylesheet
-  const sheet = document.createElement('link')
-  sheet.rel = 'stylesheet'
-  sheet.href = `https://cdn.jsdelivr.net/npm/@azury/widget@${version}/dist/index.css`
-  if (window.location.href === 'http://127.0.0.1:5500/test/azury-widget.html') sheet.href = '../dist/index.css'
-  document.head.appendChild(sheet)
+  document.head.innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">'
+  document.head.innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons+Round">'
 
-  // append typefaces
-  const poppins = document.createElement('link')
-  poppins.rel = 'stylesheet'
-  poppins.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'
-  document.head.appendChild(poppins)
-  const materialIcons = document.createElement('link')
-  materialIcons.rel = 'stylesheet'
-  materialIcons.href = 'https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons+Round'
-  document.head.appendChild(materialIcons)
+  const theme = (typeof config.theme === 'object') ? config.theme : (config.theme === 'light') ? light : dark
+  , placement: string = config.placement ?? 'bottom right'
+  , uploadLimit: number = config.uploadLimit ?? 50
+  , zIndex: number = config.zIndex ?? 9999
 
-  // set configuration
-  const theme: String = config.theme ?? 'dark'
-  , placement: String = config.placement ?? 'bottom right'
-  , uploadLimit: Number = config.uploadLimit ?? 50
-  , zIndex: Number = config.zIndex ?? 9999
-
-  // create main elements
   , input: HTMLInputElement = document.createElement('input')
   , icon: HTMLDivElement = document.createElement('div')
   , popup: HTMLDivElement = document.createElement('div')
+  , container: HTMLDivElement = document.createElement('div')
 
-  // prepare widget container
-  const container = document.createElement('div')
-  container.className = `azury_widget azury_theme_${theme}`
+  container.className = styles.widget
+  container.style.setProperty('--font', theme.font)
+  container.style.setProperty('--heading', theme.heading)
+  container.style.setProperty('--text', theme.text)
+  container.style.setProperty('--textDark', theme.textDark)
+  container.style.setProperty('--textLink', theme.textLink)
+  container.style.setProperty('--surface', theme.surface)
+  container.style.setProperty('--surfaceSecondary', theme.surfaceSecondary)
+  container.style.setProperty('--surfaceTertiary', theme.surfaceTertiary)
+  container.style.setProperty('--surfaceQuartiary', theme.surfaceQuartiary)
+  container.style.setProperty('--gray', theme.gray)
+  container.style.setProperty('--graySecondary', theme.graySecondary)
+  container.style.setProperty('--grayTertiary', theme.grayTertiary)
+  container.style.setProperty('--shadowAll', theme.shadowAll)
+  container.style.setProperty('--shadowBottom', theme.shadowBottom)
+  container.style.setProperty('--blurple', theme.blurple)
+  container.style.setProperty('--blurpleSecondary', theme.blurpleSecondary)
+  container.style.setProperty('--green', theme.green)
+  container.style.setProperty('--red', theme.red)
 
-  // prepare icon
-  icon.onclick = () => togglePopup(uploadLimit)
-  icon.className = 'azury_icon'
-  icon.innerHTML = '<i class="material-icons-round">note_add</i>'
-  container.appendChild(icon)
+  const initialContent = `<i class='material-icons-round'>note_add</i>`
+  icon.className = `${styles.icon}`
+  icon.innerHTML = initialContent
+  icon.style.zIndex = zIndex.toString()
 
-  // determine placement
   if (placement.split(' ')[0] === 'bottom') icon.style.bottom = '25px'
   if (placement.split(' ')[0] === 'top') icon.style.top = '25px'
   if (placement.split(' ')[1] === 'right') icon.style.right = '25px'
   if (placement.split(' ')[1] === 'left') icon.style.left = '25px'
 
-  // customize zIndex
-  icon.style.zIndex = zIndex.toString()
-
-  // get initial icon content
-  let initialIconContent = icon.innerHTML
-
-  // display version on right click
-  icon.addEventListener('auxclick', () => {
-    if (icon.innerHTML === `<p>v${version}</p>`) {
-      icon.innerHTML = initialIconContent
-    } else {
-      initialIconContent = icon.innerHTML
-      icon.innerHTML = `<p>v${version}</p>`
-    }
+  document.addEventListener('keydown', (event) => {
+    if (event.ctrlKey && event.key === 'v' && icon.innerHTML === `<p>${version}</p>`) return icon.innerHTML = initialContent
+    if (event.ctrlKey && event.key === 'v') icon.innerHTML = `<p>${version}</p>`
   })
 
-  // generate popup
+  container.appendChild(icon)
   container.appendChild(generatePopup({
     placement: placement,
     zIndex: zIndex.valueOf() - 1,
     uploadLimit: uploadLimit
   }))
 
-  // append widget
   document.body.appendChild(container)
+  document.querySelector(`.${styles.icon}`)?.addEventListener('click', () => togglePopup(uploadLimit))
 }
