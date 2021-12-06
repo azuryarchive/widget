@@ -1,0 +1,276 @@
+/* widget */
+
+.widget * {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  user-select: none;
+}
+
+.uploadIcon {
+  margin: 0;
+}
+
+/* icon */
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surfaceSecondary);
+  box-shadow: var(--shadowAll);
+  border-radius: 50%;
+  position: fixed;
+  height: 64px;
+  width: 64px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background: var(--surfaceTertiary);
+}
+
+.icon:active {
+  background: var(--surfaceQuartiary);
+}
+
+.icon i {
+  font-size: 32px;
+  color: var(--text);
+  transition: .3s;
+  opacity: .99;
+}
+
+.icon p {
+  font-size: 14px;
+  color: var(--textDark);
+  opacity: .99;
+  font-family: var(--font);
+}
+
+.icon:hover i {
+  color: var(--heading);
+}
+
+.icon:active i {
+  color: var(--textLink);
+}
+
+.icon.iconActive {
+  background: var(--surfaceQuartiary);
+}
+
+.icon.iconActive:hover {
+  background: var(--surfaceTertiary);
+}
+
+/* popup */
+
+.popup {
+  height: calc(350px - 40px);
+  width: calc(300px - 60px);
+  padding: 20px 30px;
+  border-radius: 28px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  background: var(--surface);
+  box-shadow: var(--shadowAll);
+}
+
+.popupActive {
+  display: flex;
+}
+
+.popupContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.popupContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.popupContent h1 {
+  font-size: 40px;
+  font-family: var(--font);
+  font-weight: 500;
+  color: var(--heading);
+  margin-bottom: 30px;
+  opacity: .99;
+}
+
+.popupContent i {
+  font-size: 64px;
+  color: var(--textLink);
+  transition: .3s;
+  cursor: pointer;
+  opacity: .99;
+}
+
+.popupContent i:hover {
+  color: var(--blurple);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.popupContent .loading {
+  animation: spin 1s infinite;
+  font-size: 64px;
+  opacity: .99;
+  color: var(--textDark) !important;
+  cursor: not-allowed;
+}
+
+.popupContent span {
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--textDark);
+  opacity: .99;
+  margin-top: 10px;
+}
+
+.popup footer {
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.popup footer > a {
+  font-size: 14px;
+  color: var(--textLink);
+  opacity: .99;
+}
+
+.popup footer > p {
+  font-size: 14px;
+  color: var(--textDark);
+  opacity: .99;
+  margin-left: 5px;
+}
+
+.popup footer > p > a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.popup footer a {
+  text-decoration: none;
+}
+
+.popup footer a:hover {
+  text-decoration: underline;
+}
+
+/* popup on success */
+
+.uploadSuccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploadSuccess span {
+  transition: .3s;
+  cursor: pointer;
+  margin: 0;
+}
+
+.uploadSuccess span:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--text-dark);
+}
+
+.copyButton {
+  background: var(--gray);
+  transition: .3s;
+  cursor: pointer;
+  padding: 9px 12px;
+  border-radius: 32px;
+  color: white;
+  box-shadow: var(--shadowBottom);
+  outline: transparent;
+  border: none;
+  font-family: var(--font);
+  opacity: .99;
+}
+
+.copyButton:hover {
+  background: var(--graySecondary);
+}
+
+.copyButton:active {
+  background: var(--grayTertiary);
+}
+
+.copyButton.copied {
+  background: var(--green);
+}
+
+.uploadMoreButton {
+  background: var(--blurple);
+  transition: .3s;
+  cursor: pointer;
+  padding: 9px 12px;
+  border-radius: 32px;
+  color: white;
+  box-shadow: var(--shadowBottom);
+  outline: transparent;
+  border: none;
+  font-family: var(--font);
+  opacity: .99;
+  margin-left: 10px;
+}
+
+.uploadMoreButton:hover {
+  background: var(--textLink);
+}
+
+.uploadMoreButton:active {
+  background: var(--blurpleSecondary);
+}
+
+/* error */
+
+.error i {
+  cursor: auto;
+  font-size: 32px;
+  opacity: .99;
+  color: var(--red) !important;
+  margin-bottom: 20px;
+}
+
+.error p {
+  font-size: 16px;
+  color: var(--text);
+  font-weight: 500;
+  opacity: .99;
+  font-family: var(--font);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.error small {
+  font-size: 14px;
+  color: var(--textDark);
+  font-family: var(--font);
+  opacity: .99;
+}
