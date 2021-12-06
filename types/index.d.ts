@@ -1,16 +1,7 @@
-import './styles/base.css';
-import './styles/dark.css';
-import './styles/light.css';
-interface Configuration {
-    theme?: String;
-    placement?: String;
-    uploadLimit?: Number;
-    zIndex?: Number;
-}
 declare const _default: (config?: Configuration | undefined) => void;
 /**
- * **Generate the Widget**
+ * ### Generate Azury's Widget
  *
- * Generate the Widget
+ * A function that generates **Azury's widget** and appends it to the DOM.
  */
 export default _default;
