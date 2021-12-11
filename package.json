@@ -36,6 +36,7 @@
   "homepage": "https://github.com/azurystudios/widget#readme",
   "devDependencies": {
     "@azury/bundler": "^1.2.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.5.2"
   },
   "type": "module"
