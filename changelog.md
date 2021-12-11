@@ -2,6 +2,7 @@
 
 Available Releases:
 
+- [v1.3.0](#v130)
 - [v1.2.0](#v120)
 - [v1.1.0](#v110)
 - [v1.0.6](#v106)
@@ -9,6 +10,15 @@ Available Releases:
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.3.0
+
+- added **dependabot**
+- patched `@azury/bundler`
+- fixed popup closing [(#2)](https://github.com/azurystudios/widget/issues/2)
+- added `rimraf` for removing temporary typescript folder
+- reduced code length
+- added badges
 
 ## v1.2.0
 
