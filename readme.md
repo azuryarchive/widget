@@ -46,7 +46,6 @@ Import the package.
 widget({
   theme: 'dark',
   placement: 'bottom right',
-  uploadLimit: 50,
   zIndex: 9999
 })
 ```
