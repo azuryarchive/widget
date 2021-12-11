@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/azurystudios/widget#readme",
   "devDependencies": {
-    "@azury/bundler": "^1.1.0",
+    "@azury/bundler": "^1.2.1",
     "typescript": "^4.5.2"
   },
   "type": "module"
