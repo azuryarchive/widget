@@ -2,9 +2,10 @@
 
 [![npm](https://img.shields.io/npm/v/@azury/widget)](https://www.npmjs.com/package/@azury/widget)
 [![npm](https://img.shields.io/npm/dt/@azury/widget)](https://www.npmjs.com/package/@azury/widget)
+[![https://www.jsdelivr.com/package/npm/@azury/widget](https://data.jsdelivr.com/v1/package/npm/@azury/widget/badge/rank?style=rounded)](https://www.jsdelivr.com/package/npm/@azury/widget)
+[![https://www.jsdelivr.com/package/npm/@azury/widget](https://data.jsdelivr.com/v1/package/npm/@azury/widget/badge?style=rounded)](https://www.jsdelivr.com/package/npm/@azury/widget)
 [![GitHub last commit](https://img.shields.io/github/last-commit/azurystudios/widget)](https://github.com/azurystudios/widget)
 [![GitHub issues](https://img.shields.io/github/issues-raw/azurystudios/widget)](https://github.com/azurystudios/widget/issues)
-[![snyk vulnerabilities](https://snyk.io/test/github/azurystudios/widget/badge.svg)](https://snyk.io/test/github/azurystudios/widget)
 
 ### Installation
 
@@ -45,7 +46,6 @@ Import the package.
 widget({
   theme: 'dark',
   placement: 'bottom right',
-  uploadLimit: 50,
   zIndex: 9999
 })
 ```
