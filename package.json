@@ -6,9 +6,9 @@
   "browser": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
+    "types": "tsc",
     "build": "build --css --esm -i src/index.ts -o dist/index.js",
     "watch": "build --css --esm --w -i src/index.ts -o dist/index.js",
-    "types": "tsc",
     "publish:patch": "npm run build && npm version patch && npm publish",
     "publish:minor": "npm run build && npm version minor && npm publish",
     "publish:major": "npm run build && npm version major && npm publish"
