@@ -24,24 +24,9 @@ export default (config?: Configuration) => {
   , container: HTMLDivElement = document.createElement('div')
 
   container.className = styles.widget
-  container.style.setProperty('--font', theme.font)
-  container.style.setProperty('--heading', theme.heading)
-  container.style.setProperty('--text', theme.text)
-  container.style.setProperty('--textDark', theme.textDark)
-  container.style.setProperty('--textLink', theme.textLink)
-  container.style.setProperty('--surface', theme.surface)
-  container.style.setProperty('--surfaceSecondary', theme.surfaceSecondary)
-  container.style.setProperty('--surfaceTertiary', theme.surfaceTertiary)
-  container.style.setProperty('--surfaceQuartiary', theme.surfaceQuartiary)
-  container.style.setProperty('--gray', theme.gray)
-  container.style.setProperty('--graySecondary', theme.graySecondary)
-  container.style.setProperty('--grayTertiary', theme.grayTertiary)
-  container.style.setProperty('--shadowAll', theme.shadowAll)
-  container.style.setProperty('--shadowBottom', theme.shadowBottom)
-  container.style.setProperty('--blurple', theme.blurple)
-  container.style.setProperty('--blurpleSecondary', theme.blurpleSecondary)
-  container.style.setProperty('--green', theme.green)
-  container.style.setProperty('--red', theme.red)
+  for (const [key, value] of Object.entries(theme)) {
+    container.style.setProperty(`--${key}`, value)
+  }
 
   const initialContent = `<i class='material-icons-round'>note_add</i>`
   icon.className = styles.icon
