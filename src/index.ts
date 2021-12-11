@@ -18,12 +18,9 @@ export default (config?: Configuration) => {
 
   const theme = (typeof config.theme === 'object') ? config.theme : (config.theme === 'light') ? light : dark
   , placement: string = config.placement ?? 'bottom right'
-  , uploadLimit: number = config.uploadLimit ?? 50
   , zIndex: number = config.zIndex ?? 9999
 
-  , input: HTMLInputElement = document.createElement('input')
   , icon: HTMLDivElement = document.createElement('div')
-  , popup: HTMLDivElement = document.createElement('div')
   , container: HTMLDivElement = document.createElement('div')
 
   container.className = styles.widget
@@ -47,7 +44,7 @@ export default (config?: Configuration) => {
   container.style.setProperty('--red', theme.red)
 
   const initialContent = `<i class='material-icons-round'>note_add</i>`
-  icon.className = `${styles.icon}`
+  icon.className = styles.icon
   icon.innerHTML = initialContent
   icon.style.zIndex = zIndex.toString()
 
@@ -56,18 +53,13 @@ export default (config?: Configuration) => {
   if (placement.split(' ')[1] === 'right') icon.style.right = '25px'
   if (placement.split(' ')[1] === 'left') icon.style.left = '25px'
 
-  document.addEventListener('keydown', (event) => {
-    if (event.ctrlKey && event.key === 'v' && icon.innerHTML === `<p>${version}</p>`) return icon.innerHTML = initialContent
-    if (event.ctrlKey && event.key === 'v') icon.innerHTML = `<p>${version}</p>`
-  })
-
   container.appendChild(icon)
   container.appendChild(generatePopup({
     placement: placement,
-    zIndex: zIndex.valueOf() - 1,
-    uploadLimit: uploadLimit
+    zIndex: zIndex
   }))
 
   document.body.appendChild(container)
-  document.querySelector(`.${styles.icon}`)?.addEventListener('click', () => togglePopup(uploadLimit))
+
+  document.querySelector(`.${styles.icon}`)?.addEventListener('click', togglePopup)
 }
