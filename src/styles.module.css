@@ -42,13 +42,6 @@
   opacity: .99;
 }
 
-.icon p {
-  font-size: 14px;
-  color: var(--textDark);
-  opacity: .99;
-  font-family: var(--font);
-}
-
 .icon:hover i {
   color: var(--heading);
 }
@@ -57,12 +50,13 @@
   color: var(--textLink);
 }
 
-.icon.iconActive {
-  background: var(--surfaceQuartiary);
+.icon.disabled {
+  background: var(--surface) !important;
+  cursor: not-allowed;
 }
 
-.icon.iconActive:hover {
-  background: var(--surfaceTertiary);
+.icon.disabled i {
+  color: var(--textDark) !important;
 }
 
 /* popup */
@@ -79,10 +73,6 @@
   position: fixed;
   background: var(--surface);
   box-shadow: var(--shadowAll);
-}
-
-.popupActive {
-  display: flex;
 }
 
 .popupContentWrapper {
@@ -179,6 +169,20 @@
   text-decoration: underline;
 }
 
+/* active styles */
+
+.widgetActive .icon {
+  background: var(--surfaceQuartiary);
+}
+
+.widgetActive .icon:hover {
+  background: var(--surfaceTertiary);
+}
+
+.widgetActive .popup {
+  display: flex;
+}
+
 /* popup on success */
 
 .uploadSuccess {
@@ -199,7 +203,7 @@
   text-decoration-color: var(--text-dark);
 }
 
-.copyButton {
+#copyButton {
   background: var(--gray);
   transition: .3s;
   cursor: pointer;
@@ -213,19 +217,19 @@
   opacity: .99;
 }
 
-.copyButton:hover {
+#copyButton:hover {
   background: var(--graySecondary);
 }
 
-.copyButton:active {
+#copyButton:active {
   background: var(--grayTertiary);
 }
 
-.copyButton.copied {
+#copyButton.copied {
   background: var(--green);
 }
 
-.uploadMoreButton {
+#uploadMoreButton {
   background: var(--blurple);
   transition: .3s;
   cursor: pointer;
@@ -240,11 +244,11 @@
   margin-left: 10px;
 }
 
-.uploadMoreButton:hover {
+#uploadMoreButton:hover {
   background: var(--textLink);
 }
 
-.uploadMoreButton:active {
+#uploadMoreButton:active {
   background: var(--blurpleSecondary);
 }
 
