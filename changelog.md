@@ -2,6 +2,7 @@
 
 Available Releases:
 
+- [v1.3.2](#v132)
 - [v1.3.1](#v131)
 - [v1.3.0](#v130)
 - [v1.2.0](#v120)
@@ -11,6 +12,11 @@ Available Releases:
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.3.2
+
+- patched `@azury/bundler`
+- patched `typescript`
 
 ## v1.3.1
 
