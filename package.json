@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azurystudios/widget.git"
+    "url": "git+https://github.com/azurydev/widget.git"
   },
   "keywords": [
     "widget",
@@ -31,9 +31,9 @@
   "author": "Azury <hello@azury.dev> (https://azury.dev)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/azurystudios/widget/issues"
+    "url": "https://github.com/azurydev/widget/issues"
   },
-  "homepage": "https://github.com/azurystudios/widget#readme",
+  "homepage": "https://github.com/azurydev/widget#readme",
   "devDependencies": {
     "@azury/bundler": "^1.2.1",
     "rimraf": "^3.0.2",
