@@ -1,9 +1,36 @@
-import { version } from './config.json'
 import togglePopup from './modules/togglePopup'
 import generatePopup from './modules/generatePopup'
 import dark from './themes/dark.json'
 import light from './themes/light.json'
 import styles from './styles.module.css'
+
+interface Theme {
+  font: string,
+  heading: string,
+  text: string,
+  textDark: string,
+  textLink: string,
+  surface: string,
+  surfaceSecondary: string,
+  surfaceTertiary: string,
+  surfaceQuartiary: string,
+  gray: string,
+  graySecondary: string,
+  grayTertiary: string,
+  shadowAll: string,
+  shadowBottom: string,
+  blurple: string,
+  blurpleSecondary: string,
+  green: string,
+  red: string
+}
+
+interface Configuration {
+  theme?: 'dark' | 'light' | 'automatic' | Theme,
+  placement?: string,
+  uploadLimit?: number,
+  zIndex?: number
+}
 
 /**
  * ### Generate Azury's Widget
@@ -16,7 +43,14 @@ export default (config?: Configuration) => {
   document.head.innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">'
   document.head.innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons+Round">'
 
-  const theme = (typeof config.theme === 'object') ? config.theme : (config.theme === 'light') ? light : dark
+  const theme = (typeof config.theme === 'object') ? (
+    config.theme
+  ) : (config.theme === 'light') ? (
+    light
+  ) : (config.theme === 'automatic') ? (
+    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? dark : light
+  ) : dark
+
   , placement: string = config.placement ?? 'bottom right'
   , zIndex: number = config.zIndex ?? 9999
 
