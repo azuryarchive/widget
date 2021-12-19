@@ -2,6 +2,7 @@
 
 Available Releases:
 
+- [v1.4.0](#v140)
 - [v1.3.3](#v133)
 - [v1.3.2](#v132)
 - [v1.3.1](#v131)
@@ -13,6 +14,10 @@ Available Releases:
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.4.0
+
+- added **automatic themes** [(#5)](https://github.com/azurystudios/widget/issues/2)
 
 ## v1.3.3
 
