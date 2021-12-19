@@ -17,7 +17,7 @@ Available Releases:
 
 ## v1.4.0
 
-- added **automatic themes** [(#5)](https://github.com/azurystudios/widget/issues/2)
+- added **automatic themes** [(#5)](https://github.com/azurydev/widget/issues/5)
 
 ## v1.3.3
 
@@ -38,7 +38,7 @@ Available Releases:
 
 - added **dependabot**
 - patched `@azury/bundler`
-- fixed popup closing [(#2)](https://github.com/azurystudios/widget/issues/2)
+- fixed popup closing [(#2)](https://github.com/azurydev/widget/issues/2)
 - added `rimraf` for removing temporary typescript folder
 - reduced code length
 - added badges
