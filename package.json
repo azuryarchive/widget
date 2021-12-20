@@ -6,7 +6,7 @@
   "browser": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "types": "tsc src/index.ts --declaration --outDir temp --declarationDir types",
+    "types": "tsc -w",
     "build": "build --css --esm -i src/index.ts -o dist/index.js",
     "watch": "build --css --esm --w -i src/index.ts -o dist/index.js",
     "publish:patch": "rimraf temp && npm run build && npm version patch && npm publish",
