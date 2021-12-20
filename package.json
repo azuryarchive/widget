@@ -9,9 +9,9 @@
     "types": "tsc -w",
     "build": "build --css --esm -i src/index.ts -o dist/index.js",
     "watch": "build --css --esm --w -i src/index.ts -o dist/index.js",
-    "publish:patch": "rimraf temp && npm run build && npm version patch && npm publish",
-    "publish:minor": "rimraf temp && npm run build && npm version minor && npm publish",
-    "publish:major": "rimraf temp && npm run build && npm version major && npm publish"
+    "publish:patch": "npm run build && npm version patch && npm publish",
+    "publish:minor": "npm run build && npm version minor && npm publish",
+    "publish:major": "npm run build && npm version major && npm publish"
   },
   "funding": {
     "type": "individual",
