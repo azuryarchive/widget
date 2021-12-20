@@ -2,6 +2,7 @@
 
 Available Releases:
 
+- [v1.4.1](#v141)
 - [v1.4.0](#v140)
 - [v1.3.3](#v133)
 - [v1.3.2](#v132)
@@ -14,6 +15,12 @@ Available Releases:
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.4.1
+
+- patched `@azury/bundler`
+- fixed typescript config
+- removed `rimraf`
 
 ## v1.4.0
 
