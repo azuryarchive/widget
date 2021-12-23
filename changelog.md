@@ -2,6 +2,7 @@
 
 Available Releases:
 
+- [v1.5.0](#v150)
 - [v1.4.2](#v142)
 - [v1.4.1](#v141)
 - [v1.4.0](#v140)
@@ -16,6 +17,10 @@ Available Releases:
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.5.0
+
+- migrated from `@azury/bundler` to `packu`
 
 ## v1.4.2
 
