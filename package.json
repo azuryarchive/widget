@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/azurydev/widget#readme",
   "devDependencies": {
-    "packu": "^2.0.1",
+    "packu": "^2.0.2",
     "typescript": "^4.5.2"
   },
   "type": "module"
