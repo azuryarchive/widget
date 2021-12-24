@@ -18,6 +18,10 @@ Available Releases:
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
 
+## v1.5.1
+
+- patched `packu`
+
 ## v1.5.0
 
 - migrated from `@azury/bundler` to `packu`
