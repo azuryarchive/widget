@@ -30,9 +30,9 @@ const handleUpload = () => {
       try {
         const formData = new FormData()
         formData.append('upload', file)
-        const response = await fetch(`${api}/accountless/files/new`, { method: 'POST', body: formData })
+        const response = await fetch(`${api}/accountless/new`, { method: 'POST', body: formData })
         const data = await response.json()
-        url = `${api}/accountless/files/${data.id}/download`
+        url = `${api}/accountless/${data.file.id}/download`
       } catch (err: any) {
         document.querySelector(`.${styles.icon}`)?.addEventListener('click', togglePopup)
         document.querySelector(`.${styles.icon}`)?.classList.remove(styles.disabled)
