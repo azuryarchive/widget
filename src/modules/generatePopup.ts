@@ -21,7 +21,7 @@ export default (config?: any) => {
     </div>
     <footer>
       <a href='https://github.com/azurystudios/widget/blob/main/terms_of_service.md' target='_blank' rel='noreferrer'>TOS</a>
-      <p>- Powered by <a href='https://azury.gg' target='_blank' rel='noreferrer'>Azury</a></p>
+      <p>- Powered by <a href='https://azury.dev' target='_blank' rel='noreferrer'>Azury</a></p>
     </footer>
   `
 
