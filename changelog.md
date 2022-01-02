@@ -2,6 +2,7 @@
 
 Available Releases:
 
+- [v1.5.5](#v155)
 - [v1.5.4](#v154)
 - [v1.5.3](#v153)
 - [v1.5.2](#v152)
@@ -21,6 +22,10 @@ Available Releases:
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.5.5
+
+- updated year mentioned in license to `2022` 
 
 ## v1.5.4
 
