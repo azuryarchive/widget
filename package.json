@@ -1,6 +1,6 @@
 {
   "name": "@azury/widget",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "Azury's Minimalistic Widget",
   "main": "dist/index.js",
   "browser": "dist/index.js",
