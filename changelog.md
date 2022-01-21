@@ -2,6 +2,7 @@
 
 Available Releases:
 
+- [v1.5.9](#v159)
 - [v1.5.8](#v158)
 - [v1.5.7](#v157)
 - [v1.5.6](#v156)
@@ -25,6 +26,10 @@ Available Releases:
 - [v1.0.3](#v103)
 - [v1.0.2](#v102)
 - [v1.0.0](#v100)
+
+## v1.5.9
+
+- patched `typescript`
 
 ## v1.5.8
 
