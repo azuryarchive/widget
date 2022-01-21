@@ -1,10 +1,12 @@
 {
   "name": "@azury/widget",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "description": "Azury's Minimalistic Widget",
-  "main": "dist/index.js",
   "browser": "dist/index.js",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
     "types": "tsc -w",
     "build": "packu --css --esm -i src/index.ts -o dist/index.js",
@@ -36,7 +38,7 @@
   "homepage": "https://github.com/azurydev/widget#readme",
   "devDependencies": {
     "packu": "^2.1.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.5"
   },
   "type": "module"
 }
