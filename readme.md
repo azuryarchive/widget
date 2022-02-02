@@ -45,4 +45,4 @@ widget({
 
 ### Usage
 
-Check out the [examples](https://github.com/azurystudios/widget/tree/main/examples) to get an idea of how to use our widget.
+Check out the [examples](https://github.com/azurydev/widget/tree/main/examples) to get an idea of how to use our widget.
