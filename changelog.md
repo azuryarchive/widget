@@ -1,31 +1,42 @@
 # Changelog for Azury's Widget
 
-Available Releases:
+<details>
+  <summary>Available Releases</summary>
+  <br>
+  <ul>
+    <li><a href="#v1510">v1.5.10</a></li>
+    <li><a href="#v159">v1.5.9</a></li>
+    <li><a href="#v158">v1.5.8</a></li>
+    <li><a href="#v157">v1.5.7</a></li>
+    <li><a href="#v156">v1.5.6</a></li>
+    <li><a href="#v155">v1.5.5</a></li>
+    <li><a href="#v154">v1.5.4</a></li>
+    <li><a href="#v153">v1.5.3</a></li>
+    <li><a href="#v152">v1.5.2</a></li>
+    <li><a href="#v151">v1.5.1</a></li>
+    <li><a href="#v150">v1.5.0</a></li>
+    <li><a href="#v142">v1.4.2</a></li>
+    <li><a href="#v141">v1.4.1</a></li>
+    <li><a href="#v140">v1.4.0</a></li>
+    <li><a href="#v133">v1.3.3</a></li>
+    <li><a href="#v132">v1.3.2</a></li>
+    <li><a href="#v131">v1.3.1</a></li>
+    <li><a href="#v130">v1.3.0</a></li>
+    <li><a href="#v120">v1.2.0</a></li>
+    <li><a href="#v110">v1.1.0</a></li>
+    <li><a href="#v106">v1.0.6</a></li>
+    <li><a href="#v104">v1.0.4</a></li>
+    <li><a href="#v103">v1.0.3</a></li>
+    <li><a href="#v102">v1.0.2</a></li>
+    <li><a href="#v100">v1.0.0</a></li>
+  </ul>
+</details>
 
-- [v1.5.9](#v159)
-- [v1.5.8](#v158)
-- [v1.5.7](#v157)
-- [v1.5.6](#v156)
-- [v1.5.5](#v155)
-- [v1.5.4](#v154)
-- [v1.5.3](#v153)
-- [v1.5.2](#v152)
-- [v1.5.1](#v151)
-- [v1.5.0](#v150)
-- [v1.4.2](#v142)
-- [v1.4.1](#v141)
-- [v1.4.0](#v140)
-- [v1.3.3](#v133)
-- [v1.3.2](#v132)
-- [v1.3.1](#v131)
-- [v1.3.0](#v130)
-- [v1.2.0](#v120)
-- [v1.1.0](#v110)
-- [v1.0.6](#v106)
-- [v1.0.4](#v104)
-- [v1.0.3](#v103)
-- [v1.0.2](#v102)
-- [v1.0.0](#v100)
+## v1.5.10
+
+- made changelog more readable and compact
+- fixed link to examples
+- edited exports
 
 ## v1.5.9
 
