@@ -4,9 +4,7 @@
   "description": "Azury's Minimalistic Widget",
   "browser": "dist/index.js",
   "types": "types/index.d.ts",
-  "exports": {
-    ".": "./dist/index.js"
-  },
+  "exports": "./dist/index.js",
   "scripts": {
     "types": "tsc -w",
     "build": "packu --css --esm -i src/index.ts -o dist/index.js",
