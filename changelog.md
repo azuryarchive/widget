@@ -4,6 +4,7 @@
   <summary>Available Releases</summary>
   <br>
   <ul>
+    <li><a href="#v1510">v1.5.10</a></li>
     <li><a href="#v159">v1.5.9</a></li>
     <li><a href="#v158">v1.5.8</a></li>
     <li><a href="#v157">v1.5.7</a></li>
@@ -30,6 +31,12 @@
     <li><a href="#v100">v1.0.0</a></li>
   </ul>
 </details>
+
+## v1.5.10
+
+- made changelog more readable and compact
+- fixed link to examples
+- edited exports
 
 ## v1.5.9
 
