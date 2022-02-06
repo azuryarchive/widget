@@ -34,9 +34,9 @@
 
 ## v1.5.10
 
-- made changelog more readable and compact
-- fixed link to examples
-- edited exports
+- made changelog more readable and compact d467ccb3587ca2a7b0c8a704b647e139a8280e13
+- fixed link to examples 2e365d5e5a0814618327246dd9d29c104e56dee1
+- edited exports cb4e6641fe899e42b3f55529b08a38063164b1e2
 
 ## v1.5.9
 
