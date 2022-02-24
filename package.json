@@ -1,7 +1,7 @@
 {
   "name": "@azury/widget",
-  "version": "1.5.10",
-  "description": "Azury's Minimalistic Widget",
+  "version": "1.5.11",
+  "description": "📑 A beautifully crafted widget for Azury",
   "browser": "dist/index.js",
   "types": "types/index.d.ts",
   "exports": "./dist/index.js",

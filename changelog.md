@@ -4,6 +4,7 @@
   <summary>Available Releases</summary>
   <br>
   <ul>
+    <li><a href="#v1511">v1.5.11</a></li>
     <li><a href="#v1510">v1.5.10</a></li>
     <li><a href="#v159">v1.5.9</a></li>
     <li><a href="#v158">v1.5.8</a></li>
@@ -31,6 +32,10 @@
     <li><a href="#v100">v1.0.0</a></li>
   </ul>
 </details>
+
+## v1.5.11
+
+- edited package description
 
 ## v1.5.10
 
