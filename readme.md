@@ -19,7 +19,7 @@ import widget from '@azury/widget'
 
 #### CDN
 
-Install our widget using [jsDelivr](https://www.jsdelivr.com/).
+Install our widget using [jsDelivr](https://www.jsdelivr.com/package/npm/@azury/widget).
 
 ```html
 <script type="module" src="https://cdn.jsdelivr.net/npm/@azury/widget@1"></script>
